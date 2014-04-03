@@ -140,6 +140,24 @@ a {
 
 .button(@color: @buttonColor) {
     background: @color;
+
+    &:hover {
+        background: lighten(@color, 5%);
+    }
+
+    &:active {
+        background: darken(@color, 5%);
+    }
+
+    &:disabled {
+        background: lighten(@color, 35%);
+        cursor: default;
+    }
+}
+
+
+.btn {
+    .button();
     color: #fff;
     padding: 10px 15px;
     text-align: center;
@@ -161,24 +179,6 @@ a {
         display: block;
         width: 100%;
     }
-
-    &:hover {
-        background: lighten(@color, 5%);
-    }
-
-    &:active {
-        background: darken(@color, 5%);
-    }
-
-    &:disabled {
-        background: lighten(@color, 35%);
-        cursor: default;
-    }
-}
-
-
-.btn {
-    .button();
 
     &.btn-success {
         .button(@success);
