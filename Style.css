@@ -29,100 +29,165 @@
     min-height: 1px;
 }
 
+.col-1:after,
+.col-2:after,
+.col-3:after,
+.col-4:after,
+.col-5:after,
+.col-6:after,
+.col-7:after,
+.col-8:after,
+.col-9:after,
+.col-10:after,
+.col-11:after,
+.col-12:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 .col-12 {
     width: 100%;
 }
 
+.col-12.col-and-half {
+    width: 104.15833333333333%;
+}
+
 .col-12.col-half {
-    width: 50%;
+    width: 95.82499999999999%;
 }
 
 .col-11 {
     width: 91.66666666666667%;
 }
 
+.col-11.col-and-half {
+    width: 95.825%;
+}
+
 .col-11.col-half {
-    width: 45.833333333333336%;
+    width: 87.49166666666666%;
 }
 
 .col-10 {
     width: 83.33333333333334%;
 }
 
+.col-10.col-and-half {
+    width: 87.49166666666667%;
+}
+
 .col-10.col-half {
-    width: 41.66666666666667%;
+    width: 79.15833333333333%;
 }
 
 .col-9 {
     width: 75%;
 }
 
+.col-9.col-and-half {
+    width: 79.15833333333333%;
+}
+
 .col-9.col-half {
-    width: 37.5%;
+    width: 70.82499999999999%;
 }
 
 .col-8 {
     width: 66.66666666666667%;
 }
 
+.col-8.col-and-half {
+    width: 70.825%;
+}
+
 .col-8.col-half {
-    width: 33.333333333333336%;
+    width: 62.491666666666674%;
 }
 
 .col-7 {
     width: 58.333333333333336%;
 }
 
+.col-7.col-and-half {
+    width: 62.49166666666667%;
+}
+
 .col-7.col-half {
-    width: 29.166666666666668%;
+    width: 54.15833333333334%;
 }
 
 .col-6 {
     width: 50%;
 }
 
+.col-6.col-and-half {
+    width: 54.15833333333333%;
+}
+
 .col-6.col-half {
-    width: 25%;
+    width: 45.825%;
 }
 
 .col-5 {
     width: 41.66666666666667%;
 }
 
+.col-5.col-and-half {
+    width: 45.825%;
+}
+
 .col-5.col-half {
-    width: 20.833333333333336%;
+    width: 37.491666666666674%;
 }
 
 .col-4 {
     width: 33.333333333333336%;
 }
 
+.col-4.col-and-half {
+    width: 37.49166666666667%;
+}
+
 .col-4.col-half {
-    width: 16.666666666666668%;
+    width: 29.158333333333335%;
 }
 
 .col-3 {
     width: 25%;
 }
 
+.col-3.col-and-half {
+    width: 29.158333333333335%;
+}
+
 .col-3.col-half {
-    width: 12.5%;
+    width: 20.825%;
 }
 
 .col-2 {
     width: 16.666666666666668%;
 }
 
+.col-2.col-and-half {
+    width: 20.825000000000003%;
+}
+
 .col-2.col-half {
-    width: 8.333333333333334%;
+    width: 12.491666666666667%;
 }
 
 .col-1 {
     width: 8.333333333333334%;
 }
 
+.col-1.col-and-half {
+    width: 12.491666666666667%;
+}
+
 .col-1.col-half {
-    width: 4.166666666666667%;
+    width: 4.158333333333333%;
 }
 
 .background.error {

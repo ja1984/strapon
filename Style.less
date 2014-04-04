@@ -55,8 +55,12 @@ body {
 .col(@width: 0) {
     width: 100% / (@columns / @width );
 
+    &.col-and-half {
+        width: (100% / (@columns / @width ) + ((100% / 12) / 2)) - ((@gutterWidth/2) / @containerMaxWidth);
+    }
+
     &.col-half {
-        width: (100% / (@columns / @width )) / 2;
+        width: (100% / (@columns / @width ) - ((100% / 12) / 2)) - ((@gutterWidth/2) / @containerMaxWidth);
     }
 }
 
@@ -67,6 +71,10 @@ body {
     padding-right: @gutterWidth / 2;
     position: relative;
     min-height: 1px;
+
+    &:after{
+        .clearfix();
+    }
 }
 
 .col-12 {
