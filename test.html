@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+
+    <style>
+        .container {
+            margin-bottom: 10px;
+        }
+
+        div[class*='col-'] div {
+            background: red;
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-6">
+            <div></div>
+        </div>
+        <div class="col-6">
+            <div></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="col-6 col-half">
+            <div></div>
+        </div>
+        <div class="col-6">
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>

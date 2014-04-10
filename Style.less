@@ -52,15 +52,15 @@ body {
     box-sizing: border-box;
 }
 
-.col(@width: 0) {
+.col(@width: 0, @next: @width + 1) {
     width: 100% / (@columns / @width );
 
-    &.col-and-half {
-        width: (100% / (@columns / @width ) + ((100% / 12) / 2)) - ((@gutterWidth/2) / @containerMaxWidth);
-    }
-
     &.col-half {
-        width: (100% / (@columns / @width ) - ((100% / 12) / 2)) - ((@gutterWidth/2) / @containerMaxWidth);
+        width: (100% / (@columns / @width ) + ((100% / 12) / 2)) - ((@gutterWidth/2) / @containerMaxWidth);
+
+        & + .col-@{next}{
+            width: (100% / (@columns / @next ) - ((100% / 12) / 2)) - ((@gutterWidth/2) / @containerMaxWidth);
+        }
     }
 }
 
@@ -72,7 +72,7 @@ body {
     position: relative;
     min-height: 1px;
 
-    &:after{
+    &:after {
         .clearfix();
     }
 }
